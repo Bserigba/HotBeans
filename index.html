@@ -1,0 +1,249 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hot Beans</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+<h1>  ''  </h1>
+
+<header>
+<img src="logo.png" class="logo">
+	<nav>
+		<ul>
+		<div class="nav">
+ 
+			<li> <a href="#index"> Home Page</a></li>
+			<li> <a href="#staff"> Our Staff</a></li>
+			<li> <a href="#apply"> Apply Here</a></li>
+			<li> <a href="#training"> Training </a></li>
+			<li> <a href="#contactus"> Contact Us</a></li>
+		</ul>
+	</nav>	
+</header>
+
+</br>
+</br>
+
+
+<main>
+		<section id="index">
+		<div class="section-inner">
+	
+		<!-- Home Page -->
+	<div class="page home">
+		<h1>Home Page</h1>
+	
+	
+	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada nunc in nisl suscipit iaculis. Nullam tempus sem ut turpis posuere, at posuere leo iaculis. Sed sed venenatis nibh, nec fermentum enim. Vestibulum gravida massa id nunc dictum ullamcorper. Mauris sagittis nisi id lectus hendrerit, in scelerisque risus feugiat. Aliquam venenatis malesuada mauris, nec suscipit massa. Fusce maximus elit vel dapibus consectetur. Proin iaculis dolor at erat pharetra, eget cursus libero placerat. Pellentesque iaculis lectus at dui consectetur interdum. Vestibulum lacinia nisi et finibus condimentum. Sed et risus in risus pulvinar eleifend. Integer lobortis purus vitae risus bibendum sollicitudin. Suspendisse dapibus augue id felis posuere placerat. Phasellus maximus turpis sit amet fermentum ultrices. Curabitur faucibus mauris ac vestibulum tristique. </p>
+		
+	<img src="home.png" style="width:440px""height:295px">
+	</br>
+	</br>
+	
+	
+	</div>
+		
+		</section>
+		
+	
+		<section id="staff">
+		<div class="section-inner">
+			<h1> Our Team</h1>
+			
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="person1.jpg" style="width:500px""height:500px">
+			  <div class="text">John</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="person2.jpg" style="width:500px""height:500pxx">
+			  <div class="text">Lin</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="person3.jpg" style="width:500px""height:500px">
+			  <div class="text">Simon</div>
+			</div>
+			
+		
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+
+			<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex++;
+			  if (slideIndex > slides.length) {slideIndex = 1}    
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			  setTimeout(showSlides, 5000); // Change image every 2 seconds
+			}
+			</script>
+		</div>
+		</section>
+		
+		
+
+		<section id="apply">
+  <div class="section-inner">
+    <h1> Application Page</h1>
+    <p>Please fill in the form to apply</p>
+ 
+	
+	<div class="container">
+  
+  <div class="form">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="num">Phone Number</label>
+        <input type="text" id="num" name="num" placeholder="Your number..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="job">Job chosen</label>
+        <select id="job" name="job">
+		
+          <option value="select">Select a job role..</option>
+		  <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="programmer">Programmer</option>
+		  <option value="manager">Manager</option>
+        </select>
+       
+      </form>
+  </div>
+ 
+</div>
+
+	</br>
+	</br>
+	
+  </div>
+</section>
+		
+		
+		
+			<section id="training">
+		<div class="section-inner">
+			<h1>Recommended courses</h1>
+			
+<style>
+.vertical-text {
+display: block;
+}
+</style>
+
+  <div class="vertical-text">Introductuion to HTML:</div>
+  <div class="vertical-text">This course is for beginners who want to learn the fundamentals of HTML coding.</div>
+  </br>
+  <div class="vertical-text">Advanced software & web developer diploma:</div>
+  <div class="vertical-text">This course teaches students how to use various necessary coding languages such</div>
+  <div class="vertical-text">as HTML, CSS, JavaScript at the advanced level. Students will broaden their skill</div>
+  <div class="vertical-text">set with a strong foundation in SQL, C# and Microsoft's .NET framework</div>
+  </br>
+  <div class="vertical-text">Web desing award:</div>
+  <div class="vertical-text">This course will  teach students how to desing a website using various applications</div>
+  <div class="vertical-text">and software, such as Dreamweaver CC, Photoshop CC, HTML and CSS</div>
+  </br>
+  <div class="vertical-text">Understanding coding:</div>
+  <div class="vertical-text">This course teaches helps students understand advanced lavels of coding and gain</div>
+  <div class="vertical-text">knowledge in coding terminology</div>
+  </br>
+  <div class="vertical-text">Web developer diploma:</div>
+  <div class="vertical-text">This course teaches how to us HTML, CSS and JavaScript to develop advanced</div>
+  <div class="vertical-text">websites</div>
+
+			 
+			
+</div>
+</section>
+		
+		
+
+		<section id="contactus">
+  <div class="section-inner">
+    <h1> Contact Us Page</h1>
+	
+	
+	
+	<p> Locate Us</p>
+	
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8370.107572089833!2d-0.050186411283293694!3d51.413198984229425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876015a3bb0bbf1%3A0x390cb609f7cd5609!2sHot%20Beans%20Web%20Development!5e0!3m2!1sen!2suk!4v1686219221648!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	</br>
+	</br>
+	
+    <p>Please fill in the form with any enquiries</p>
+ 
+	
+	<div class="container">
+  
+  <div class="form">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+  </div>
+  
+</div>
+
+</br>
+</br>
+	
+	<a href="tel:01164355891"><img src="phone.png" alt="Phone us" width="70" height="70"></a>
+
+<a href="mailto:hotbans@yahoo.com"><img src="email.png" alt="Clickable Image" width="70" height="70" style="margin-left: 15px;"></a>
+
+</br>
+</br>
+
+  </div>
+</section>
+
+
+		</main>
+		
+		<footer>
+		&copy; 2023 Developed by Bryan
+
+		</footer>
+
+</body>
+</html>
